@@ -1,16 +1,35 @@
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: pink;
+  padding: 10px 0;
+  z-index: 1000;
 }
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 10px;
+
+#navbar ul {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-nav ul li a{
-    color: white;
-    text-decoration: white;
-    font-size: 15px;
+
+#navbar ul li {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#navbar ul li:last-child {
+  margin-right: 0;
+}
+
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
 }
