@@ -58,11 +58,7 @@ body {
 
 
 
-.container h1 {
-  font-size: 3em;
-  text-align: center;
-  color: yellow;
-}
+
 .book{
   display: inline-block;
   padding: 15px 20px;
