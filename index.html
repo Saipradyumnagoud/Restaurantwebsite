@@ -14,7 +14,6 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#gallery">Gallery</a></li>
-          
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -51,5 +50,35 @@
         <img src="Images/img12.jpg"/>
     </div>
   </div>
+  <div id="contact">
+    <div class="container">
+      <h1 style="text-align: center; font-size: 3em;">Contact</h1>
+      <p>Mobile : 0001221033</p><br/>
+      <p>Address : 15 Florida Ave</p><br/>
+      <p>Email : foodcorner@gmail.com</p>
+    </div>
+  </div>
+  <div id="booktable">
+    <div class="container">
+      <h1 style="text-align: center; font-size: 3em;"><U>Book Table</U></h1>
+      <form>
+      <label>NAME : </label>
+      <input type="text" name="name" required /><br/><br/>
+      <label>CELL : </label>
+      <input type="tel"  name="phone" placeholder="Ex:  123-45-6789" required /><br/><br/>
+      <button type="submit" class="sendbutton">BOOK NOW</button>
+    </form>
+  </div>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
   </body>
 </html>

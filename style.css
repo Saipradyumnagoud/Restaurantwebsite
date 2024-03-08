@@ -80,3 +80,30 @@ body {
 .image-grid img {
   max-width: 100%; 
 }
+form input,form textarea{
+  width: 40%;
+  height: 3%;
+  border: 0;
+  outline: none;
+  background-color: rgb(211, 210, 210);
+  padding: 15px;
+  margin: 15px 0;
+  color: black;
+  font-size: 18px ;
+  border-radius: 6px;
+}
+.sendbutton {
+  display: inline-block;
+  padding: 10px 20PX;
+  border: 2px solid black; 
+  color: grey;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: border-color 0.5s; 
+}
+.sendbutton:hover
+{
+  background-color: red;
+  color: black;
+}
