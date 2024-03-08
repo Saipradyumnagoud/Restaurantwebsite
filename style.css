@@ -107,3 +107,7 @@ form input,form textarea{
   background-color: red;
   color: black;
 }
+.book:hover{
+  background-color: aquamarine;
+  color : black
+}
