@@ -39,6 +39,7 @@ body {
 .container
 {
     padding: 10px 10%;
+    text-align: center;
 
 }
 body {
@@ -70,5 +71,12 @@ body {
   transition: border-color 0.5s; 
   width: 100px;
 }
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  grid-gap: 20px; 
+}
 
-
+.image-grid img {
+  max-width: 100%; 
+}
