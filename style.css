@@ -64,13 +64,13 @@ body {
   color: yellow;
 }
 .book{
-  align-items: center;
   display: inline-block;
-  padding: 15px 40px;
+  padding: 15px 20px;
   border: 2px solid black; 
   color: white;
   background-color: red;
   text-decoration: none;
   border-radius: 5px;
   transition: border-color 0.5s; 
+  width: 100px;
 }
