@@ -125,7 +125,9 @@ form input,form textarea{
   text-decoration: none;
   border-radius: 30px;
   transition: border-color 0.5s; 
+  transition: transform 0.3s ease
 }
 .menu:hover{
+  
   transform: scale(1.1);
 }
