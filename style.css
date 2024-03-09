@@ -81,7 +81,9 @@ body {
   transition: transform 0.3s ease;
 }
 
-
+.image-grid img:hover {
+  transform: scale(1.1);
+}
 
 form input,form textarea{
   width: 40%;
