@@ -39,8 +39,7 @@ body {
 .container
 {
     padding: 10px 10%;
-    text-align: center;
-
+    
 }
 body {
   margin: 0;
@@ -110,4 +109,17 @@ form input,form textarea{
 .book:hover{
   background-color: aquamarine;
   color : black
+}
+.menu{
+  display: inline-block;
+  padding: 10px 20PX;
+  border: 2px solid red; 
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: border-color 0.5s; 
+}
+.menu:hover{
+  transform: scale(1.1);
 }
