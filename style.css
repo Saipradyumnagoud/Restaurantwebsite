@@ -78,7 +78,11 @@ body {
 
 .image-grid img {
   max-width: 100%; 
+  transition: transform 0.3s ease;
 }
+
+
+
 form input,form textarea{
   width: 40%;
   height: 3%;
