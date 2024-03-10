@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link   rel="icon" href="logo.png" >
+    
+    
     <title>Restaurant Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -51,10 +54,18 @@
         <a href="#" class="menu"><img src="food/lava cake.avif" width="55px" style="align-items: center;"/><br/>lava cake<br/>$100</a>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="#" class="menu"><img src="food/lollipop.avif" width="55px" style="align-items: center;"/><br/>Chicken lollipop<br/>$100</a>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="#" class="menu"><img src="food/noddles.avif" width="55px" style="align-items: center;"/><br/>Noddles&nbsp;<br/>$100</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"  class="menu"><img src="food/roast.jpg" width="45px" style="align-items: center;"/><br/>Roastedchicken<br/>$100</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#" class="menu"><img src="food/65.avif" width="55px" style="align-items: center;"/><br/>Chicken 65<br/>$100</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#" class="menu"><img src="food/555.avif" width="55px" style="align-items: center;"/><br/>Chicken 555<br/>$100</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#" class="menu"><img src="food/biryani.avif" width="55px" style="align-items: center;"/><br/>Chicken biryani<br/>$100</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#" class="menu"><img src="food/burger.avif" width="55px" style="align-items: center;"/><br/>Chicken burger<br/>$100</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#" class="menu"><img src="food/lava cake.avif" width="55px" style="align-items: center;"/><br/>lava cake<br/>$100</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#" class="menu"><img src="food/lollipop.avif" width="55px" style="align-items: center;"/><br/>Chicken lollipop<br/>$100</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#" class="menu"><img src="food/noddles.avif" width="55px" style="align-items: center;"/><br/>Noddles&nbsp;<br/>$100</a>&nbsp;&nbsp;&nbsp;&nbsp;
       </div>
       <br/>
       <div style="display: flex; justify-content: center;">
-      <button  class="btn" onclick="loadMore()">Load More</button>
+      <button  class="btn" onclick="loadMore()">Load More <i class="fas fa-angle-down"></i></button>
     </div>
       </div>
     </div>
@@ -115,10 +126,13 @@
       if (additionalItems.style.display === "none") {
         additionalItems.style.display = "block";
         loadMoreBtn.innerText = "Load Less";
+        
       } else {
         additionalItems.style.display = "none";
         loadMoreBtn.innerText = "Load More";
+        
       }
+      additionalItems.scrollIntoView({ behavior: "smooth" });
     }
   </script>
   </body>
