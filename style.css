@@ -113,8 +113,9 @@ form input,form textarea{
   color: black;
 }
 .book:hover{
-  background-color: #666;
+  background-color: #009087;
   color : white;
+  border-color: wheat;
 }
 .menu{
   display: inline-block;

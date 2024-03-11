@@ -120,20 +120,20 @@
   </script>
   <script>
     function loadMore() {
-      var additionalItems = document.getElementById("additionalItems");
-      var loadMoreBtn = document.getElementsByClassName("loadMoreBtn");
-  
-      if (additionalItems.style.display === "none") {
-        additionalItems.style.display = "block";
-        loadMoreBtn.innerText = "Load Less";
-        
-      } else {
-        additionalItems.style.display = "none";
-        loadMoreBtn.innerText = "Load More";
-        
-      }
-      additionalItems.scrollIntoView({ behavior: "smooth" });
-    }
+  var additionalItems = document.getElementById("additionalItems");
+  var loadMoreBtn = document.querySelector('.btn');
+
+  if (additionalItems.style.display === "none") {
+    additionalItems.style.display = "block";
+    loadMoreBtn.innerText = "Load Less";
+  } else {
+    additionalItems.style.display = "none";
+    loadMoreBtn.innerText = "Load More";
+  }
+  additionalItems.scrollIntoView({ behavior: "smooth" });
+}
+
   </script>
+  
   </body>
 </html>
