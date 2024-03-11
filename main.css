@@ -1,0 +1,8 @@
+body {
+    background-image: url(Images/mainback.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0; 
+    height: 100vh; 
+}
