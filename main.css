@@ -6,3 +6,13 @@ body {
     margin: 0; 
     height: 100vh; 
 }
+
+
+.search {
+    text-align: center;
+}
+
+.search form {
+    margin-left: 43%;
+}
+
