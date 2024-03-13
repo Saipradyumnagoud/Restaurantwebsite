@@ -30,12 +30,20 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="Restaurant1.html" target="_blank" class="pagebtn"><img src="Images/img6.jpg" width="80px"/><b><br>Food corner<br>3.5/5</b></a>
     </div>
+    <div class="pages"  id="pageNumber1" style="display: none; ">
+        <h1 style="color: aliceblue; text-align: justify;">Sorry. There no Restaurants persent in the location You have Entered</h1>
+    </div>
     <script> 
     function search(event) {
         event.preventDefault();
         var cityName = document.getElementById("searchInput").value.trim();
-        if (cityName !== "") {
+        if (cityName.toLowerCase() === "hanamkonda") {
             document.getElementById("pageNumber").style.display = "block";
+            document.getElementById("pageNumber1").style.display = "none";
+        }
+        else if (cityName !== "") {
+            document.getElementById("pageNumber1").style.display = "block";
+            document.getElementById("pageNumber").style.display = "none";
         } else {
             alert("Please enter a city name.");
         }
