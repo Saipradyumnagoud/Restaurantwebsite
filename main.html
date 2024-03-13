@@ -14,14 +14,14 @@
         <br/><br/><br/><br/><br/>
         <h1 style="text-align: center; color: aliceblue; font-weight: bolder; font-size: 4em; " >FOOD FINDER</h1>
     </div>
-    <form >
+    <form  onsubmit="search(event)">
     <div class="search">
     <input  type="text" id="searchInput" placeholder="ENTER YOUR CITY NAME"/>
     <button type="submit" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>     
     </div>
     <br>
-    <div class="pages">
+    <div class="pages"  id="pageNumber" style="display: none;">
         <a href="Restaurant1.html" target="_blank" class="pagebtn"><img src="Images/img6.jpg" width="80px"/><b><br>Food corner<br>3.5/5</b></a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="Restaurant1.html" target="_blank" class="pagebtn"><img src="Images/img6.jpg" width="80px"/><b><br>Food corner<br>3.5/5</b></a>
@@ -31,10 +31,11 @@
         <a href="Restaurant1.html" target="_blank" class="pagebtn"><img src="Images/img6.jpg" width="80px"/><b><br>Food corner<br>3.5/5</b></a>
     </div>
     <script> 
-    function search() {
+    function search(event) {
+        event.preventDefault();
         var cityName = document.getElementById("searchInput").value.trim();
         if (cityName !== "") {
-            window.location.href = "Restaurant1.html";
+            document.getElementById("pageNumber").style.display = "block";
         } else {
             alert("Please enter a city name.");
         }
