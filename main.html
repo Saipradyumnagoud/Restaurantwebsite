@@ -17,8 +17,18 @@
     <form >
     <div class="search">
     <input  type="text" id="searchInput" placeholder="ENTER YOUR CITY NAME"/>
-    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <button type="submit" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>     
     </div>
+    <script> 
+    function search() {
+        var cityName = document.getElementById("searchInput").value.trim();
+        if (cityName !== "") {
+            window.location.href = "Restaurant1.html";
+        } else {
+            alert("Please enter a city name.");
+        }
+    }
+    </script>
 </body>
 </html>

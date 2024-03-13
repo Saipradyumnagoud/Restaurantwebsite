@@ -104,7 +104,7 @@
       <input type="text" name="name" required /><br/><br/>
       <label>CELL : </label>
       <input type="tel"  name="phone" placeholder="Ex:  123-45-6789" required /><br/><br/>
-      <button type="submit" class="sendbutton">BOOK NOW</button>
+      <button type="submit" class="sendbutton" onclick="book()">BOOK NOW</button>
     </form>
   </div>
   <script>
@@ -131,6 +131,10 @@
     loadMoreBtn.innerText = "Load More";
   }
   additionalItems.scrollIntoView({ behavior: "smooth" });
+}
+function book()
+{
+  
 }
 
   </script>
