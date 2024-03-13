@@ -34,7 +34,7 @@ form input{
     height: 3%;
     border: 0;
     outline: none;
-    border:2px solid red;
+    border:2px solid white;
     background-color: transparent;
     padding: 15px;
     margin: 15px 0;
@@ -43,5 +43,6 @@ form input{
     border-radius: 6px;
  }
  form button:hover{
-    background-color: grey
+    background-color: grey;
+    color:white;
  }
