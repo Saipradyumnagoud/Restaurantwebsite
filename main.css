@@ -16,3 +16,32 @@ body {
     margin-left: 42%;
 }
 
+form input{
+    width: 40%;
+    height: 3%;
+    border: 0;
+    outline: none;
+    background-color: rgb(211, 210, 210);
+    padding: 15px;
+    margin: 15px 0;
+    color: black;
+    font-size: 18px ;
+    border-radius: 6px;
+}
+ form button{
+    
+    width: 10%;
+    height: 3%;
+    border: 0;
+    outline: none;
+    border:2px solid red;
+    background-color: transparent;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px ;
+    border-radius: 6px;
+ }
+ form button:hover{
+    background-color: grey
+ }
