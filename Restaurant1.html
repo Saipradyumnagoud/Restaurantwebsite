@@ -137,8 +137,9 @@ function book()
   var booking=document.getElementById("number").value.trim();
   if(booking!="")
   {
-    
-    alert("Your Table is booked your table number is 1.");
+    var tableNumber = Math.floor(Math.random() * 100) + 1;
+          alert("Your Table is booked. Your table number is: " + tableNumber);
+    //alert("Your Table is booked your table number is 1.");
 
   }
 else
