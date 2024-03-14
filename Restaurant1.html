@@ -101,7 +101,7 @@
       <h1 style="text-align: center; font-size: 3em;"><U>Book Table</U></h1>
       <form style="text-align: center;">
       <label>NAME : </label>
-      <input type="text" name="name" required /><br/><br/>
+      <input type="text" name="name" id="name" required /><br/><br/>
       <label>CELL : </label>
       <input type="tel"  name="phone" placeholder="Ex:  123-45-6789" id="number" required /><br/><br/>
       <button type="submit" class="sendbutton" onclick="book()">BOOK NOW</button>
@@ -132,21 +132,18 @@
   }
   additionalItems.scrollIntoView({ behavior: "smooth" });
 }
-function book()
-{
-  var booking=document.getElementById("number").value.trim();
-  if(booking!="")
-  {
-    var tableNumber = Math.floor(Math.random() * 100) + 1;
-          alert("Your Table is booked. Your table number is: " + tableNumber);
-    //alert("Your Table is booked your table number is 1.");
-
+function book() {
+    var booking = document.getElementById("number").value.trim();
+    if (booking !== "") {
+      var tableNumber = Math.floor(Math.random() * 100) + 1;
+      var name = document.getElementById("name").value.trim();
+      var number=document.getElementById("number").value.trim();
+      alert("Thank you Your Booking is Sucessful"+"\nYour name is: " + name + "\nYour mobile Number: "+number +" \n Your Table is booked. Your table number is: " + tableNumber  );
+    } else {
+      alert("Enter the details.");
+    }
   }
-else
-{
-  alert("Enter the details.");
-}
-}
+
 
   </script>
   
