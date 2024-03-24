@@ -227,3 +227,19 @@ form input,form textarea{
   opacity: 0;
  }
  
+ @media only screen and (max-width: 600px) {
+  /* Styles for screens with a maximum width of 600px (typically mobile devices) */
+  #navbar ul {
+    flex-direction: column; /* Change the direction of the list items to vertical */
+    padding: 0; /* Remove default padding */
+  }
+
+  #navbar ul li {
+    text-align: center; /* Center align the list items */
+  }
+
+  #navbar ul li a {
+    display: block; /* Display the links as block elements to take up full width */
+    padding: 10px 0; /* Add some padding for better touch interaction */
+  }
+}
