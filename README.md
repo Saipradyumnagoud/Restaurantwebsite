@@ -13,4 +13,4 @@ This repository contains the source code for a simple restaurant website.
 
 To use this website, simply clone the repository and open the `index.html` file in your web browser.
 
-👉 <a href="https://saipradyumnagoud.github.io/Restaurantwebsite/" target="_blank">demo</a>
+👉 <a href="https://saipradyumnagoud.github.io/Restaurantwebsite/" target="_blank" >demo</a>
