@@ -256,9 +256,9 @@ form input,form textarea{
     position: absolute;
     top: 100%; /* Position the dropdown below the main nav */
     left: 0;
-    background-color: pink;
+    background-color: rgb(239, 8, 46);
     z-index: 999;
-    border-top: 1px solid black;
+    border-top: 1px  white;
   }
 
   #navbar ul.active {
