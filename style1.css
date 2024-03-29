@@ -226,20 +226,63 @@ form input,form textarea{
   transform: scaleX(1.4) scaleY(1.5);
   opacity: 0;
  }
- 
- @media only screen and (max-width: 600px) {
-  /* Styles for screens with a maximum width of 600px (typically mobile devices) */
+ .checkbtn{
+
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+ }
+ #check{
+  display: none;
+
+ }
+ @media (max-width: 952px) {
+  .main-nav {
+    justify-content: space-between;
+    padding: 10px 20px; /* Adjust padding for better spacing */
+  }
+
   #navbar ul {
-    flex-direction: column; /* Change the direction of the list items to vertical */
-    padding: 0; /* Remove default padding */
+    display: none;
+    width: 100%;
+    text-align: center; /* Center align the menu items */
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%; /* Position the dropdown below the main nav */
+    left: 0;
+    background-color: pink;
+    z-index: 999;
+    border-top: 1px solid black; /* Add a border between main nav and dropdown */
+  }
+
+  #navbar ul.active {
+    display: flex;
+    flex-direction: column;
   }
 
   #navbar ul li {
-    text-align: center; /* Center align the list items */
+    padding: 15px 0; /* Add padding */
+    border-bottom: 1px solid black; /* Add a border between items */
   }
 
-  #navbar ul li a {
-    display: block; /* Display the links as block elements to take up full width */
-    padding: 10px 0; /* Add some padding for better touch interaction */
+  .checkbtn {
+    display: block;
+    cursor: pointer;
+    padding: 15px;
+  }
+
+  /* Adjust styles for menu icon */
+  .checkbtn i {
+    font-size: 24px; /* Adjust size */
+  }
+
+  /* Adjust hover effect for menu icon */
+  .checkbtn:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Add a subtle background color on hover */
   }
 }
