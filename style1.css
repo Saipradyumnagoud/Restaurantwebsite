@@ -231,7 +231,7 @@ form input,form textarea{
   font-size: 30px;
   color: white;
   float: right;
-  line-height: 30px;
+  line-height: 15px;
   margin-right: 40px;
   cursor: pointer;
   display: none;
