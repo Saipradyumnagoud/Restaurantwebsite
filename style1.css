@@ -231,7 +231,7 @@ form input,form textarea{
   font-size: 30px;
   color: white;
   float: right;
-  line-height: 80px;
+  line-height: 30px;
   margin-right: 40px;
   cursor: pointer;
   display: none;
@@ -243,13 +243,14 @@ form input,form textarea{
  @media (max-width: 952px) {
   .main-nav {
     justify-content: space-between;
-    padding: 10px 20px; /* Adjust padding for better spacing */
+    padding: 10px 20px;
+    position: relative; /* Ensure relative positioning for absolute children */
   }
 
   #navbar ul {
     display: none;
     width: 100%;
-    text-align: center; /* Center align the menu items */
+    text-align: center;
     padding: 0;
     margin: 0;
     position: absolute;
@@ -257,7 +258,7 @@ form input,form textarea{
     left: 0;
     background-color: pink;
     z-index: 999;
-    border-top: 1px solid black; /* Add a border between main nav and dropdown */
+    border-top: 1px solid black;
   }
 
   #navbar ul.active {
@@ -266,8 +267,8 @@ form input,form textarea{
   }
 
   #navbar ul li {
-    padding: 15px 0; /* Add padding */
-    border-bottom: 1px solid black; /* Add a border between items */
+    padding: 15px 0;
+    border-bottom: 1px solid black;
   }
 
   .checkbtn {
@@ -276,13 +277,27 @@ form input,form textarea{
     padding: 15px;
   }
 
-  /* Adjust styles for menu icon */
   .checkbtn i {
-    font-size: 24px; /* Adjust size */
+    font-size: 24px;
   }
 
-  /* Adjust hover effect for menu icon */
   .checkbtn:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Add a subtle background color on hover */
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  /* Adjust checkbox visibility */
+  #check {
+    display: none;
+  }
+
+  /* Adjust label style for better accessibility */
+  #check + .checkbtn {
+    cursor: pointer;
+    user-select: none; /* Prevent text selection */
+  }
+
+  /* Toggle navigation visibility when checkbox is checked */
+  #check:checked + #navbar ul {
+    display: flex;
   }
 }
