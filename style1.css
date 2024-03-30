@@ -226,13 +226,16 @@ form input,form textarea{
   transform: scaleX(1.4) scaleY(1.5);
   opacity: 0;
  }
- .checkbtn {
+ .checkbtn{
+
   font-size: 30px;
   color: white;
+  float: right;
   line-height: 15px;
   margin-right: 40px;
   cursor: pointer;
-}
+  display: none;
+ }
 .checkbtn{
   display: none;
 }
