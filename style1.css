@@ -230,7 +230,7 @@ form input,form textarea{
   font-size: 30px;
   color: white;
   line-height: 15px;
-  margin-left: 40px;
+  margin-right: 40px;
   cursor: pointer;
 }
 .checkbtn{
