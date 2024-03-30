@@ -236,9 +236,6 @@ form input,form textarea{
   cursor: pointer;
   display: none;
  }
-.checkbtn{
-  display: none;
-}
  #check{
   display: none;
 
