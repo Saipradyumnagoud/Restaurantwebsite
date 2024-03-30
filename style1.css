@@ -226,16 +226,12 @@ form input,form textarea{
   transform: scaleX(1.4) scaleY(1.5);
   opacity: 0;
  }
- .checkbtn{
-
+ .checkbtn {
   font-size: 30px;
   color: white;
-  float: right;
   line-height: 15px;
-  margin-right: 40px;
   cursor: pointer;
-  display: none;
- }
+}
  #check{
   display: none;
 
@@ -272,7 +268,7 @@ form input,form textarea{
     display: block;
     cursor: pointer;
     padding: 10px;
-    background-color: #f0f0ff; /* Adjust as needed */
+    
     color: #0d0e10; /* Adjust as needed */
     font-size: 20px; /* Adjust as needed */
     text-align: center;
@@ -284,4 +280,5 @@ form input,form textarea{
 #check:checked ~ ul {
     display: block;
 }
+
 }
