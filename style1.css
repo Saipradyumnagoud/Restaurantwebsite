@@ -235,6 +235,7 @@ form input,form textarea{
   margin-right: 40px;
   cursor: pointer;
   display: none;
+  align-items: left;
  }
  #check{
   display: none;
@@ -247,7 +248,7 @@ form input,form textarea{
     top: 56px; /* Adjust as needed */
     left: 0;
     width: 100%;
-    background-color: #f0f0ff; /* Adjust as needed */
+    background-color: pink; /* Adjust as needed */
     padding: 0;
     margin: 0;
     text-align: center;
