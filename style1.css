@@ -280,7 +280,7 @@ form input,form textarea{
     border-bottom: 1px solid #ccc; /* Adjust as needed */
 }
 #check + label:hover {
-    background-color: #d5dce0; /* Adjust as needed */
+    background-color: transparent /* Adjust as needed */
 }
 #check:checked ~ ul {
     display: block;
