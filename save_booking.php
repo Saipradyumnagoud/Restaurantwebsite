@@ -1,6 +1,6 @@
 <?php
 // Establish database connection
-$conn = new mysqli("localhost", "username", "password", "your_database");
+$conn = new mysqli("localhost", "saipradyumna", "sai", "restaurantdetails");
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
