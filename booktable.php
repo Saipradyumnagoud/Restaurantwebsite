@@ -6,11 +6,14 @@
     <title>Booking Details</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            /* background-color: #f4f4f4; */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-image: url(home.png);
-            margin: 0;
-            padding: 0;
+            
         }
         .container {
             max-width: 600px;
