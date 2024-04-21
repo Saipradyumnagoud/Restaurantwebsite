@@ -1,6 +1,6 @@
 <?php
 // Establish database connection
-$conn = new mysqli("127.0.0.1:5500", "root@localhost", "", "restaurantdetails");
+$conn = new mysqli("127.0.0.1", "root", "", "restaurantdetails");
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
