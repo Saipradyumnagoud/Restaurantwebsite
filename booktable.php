@@ -48,7 +48,6 @@
         <div class="booking-details">
             <?php
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                // Establish database connection
                 $conn = new mysqli("127.0.0.1", "root", "", "restaurantdetails");
 
                 if ($conn->connect_error) {
