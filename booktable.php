@@ -47,8 +47,15 @@
         <h1>Booking Details</h1>
         <div class="booking-details">
             <?php
+            $hostname = "sql6.freesqldatabase.com"; // or your MySQL server hostname
+            $username = "sql6701807"; // your MySQL username
+            $password = "sjhyrXybNn"; // your MySQL password
+            $database = "sql6701807";
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $conn = new mysqli("localhost", "sql6701807", " sjhyrXybNn", "sql6701807");
+                $conn = new mysqli($hostname,
+                $username,
+                $password,
+                $database);
 
                 if ($conn->connect_error) {
                     die("Connection failed: " . $conn->connect_error);
