@@ -97,7 +97,7 @@
                 $to = $email; // Use the user-provided email address
     $subject = "Table Booking Confirmation";
     $message = "Hello $name,\n\nYour table has been successfully booked.\n\nBooking Details:\nName: $name\nPhone: $phone\nEmail: $email\n\nThank you!";
-    $headers = "From: your_email@example.com"; // Replace with your email address
+    $headers = "From: saipradyumna1@gmail.com"; // Replace with your email address
 
     if (mail($to, $subject, $message, $headers)) {
         echo "<script>alert('Booking successful! Check your email for confirmation.')</script>";
