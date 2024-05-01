@@ -120,7 +120,7 @@ form input,form textarea{
 .menu{
   display: inline-block;
   padding: 10px 20PX;
-  border: 2px solid red; 
+  /* border: 2px solid red;  */
   color: black;
   background-color: white;
   text-decoration: none;
