@@ -64,6 +64,8 @@
 
                 $name = $_POST['name'];
                 $phone = $_POST['phone'];
+                $mail= $_POST['mail'];
+
 
                 // Check if user can book a table
                 $sixHoursAgo = date('Y-m-d H:i:s', strtotime('-6 hours'));
@@ -87,10 +89,21 @@
                         echo "<p><strong>Name:</strong> $name</p>";
                         echo "<p><strong>Phone Number:</strong> $phone</p>";
                         echo "<p><strong>Table Number:</strong> $tableNumber</p>";
+                        
                     } else {
                         echo "Error: " . $sql . "<br>" . $conn->error;
                     }
                 }
+                $to = $email; // Use the user-provided email address
+    $subject = "Table Booking Confirmation";
+    $message = "Hello $name,\n\nYour table has been successfully booked.\n\nBooking Details:\nName: $name\nPhone: $phone\nEmail: $email\n\nThank you!";
+    $headers = "From: your_email@example.com"; // Replace with your email address
+
+    if (mail($to, $subject, $message, $headers)) {
+        echo "<script>alert('Booking successful! Check your email for confirmation.')</script>";
+    } else {
+        echo "<script>alert('Booking failed! Please try again.')</script>";
+    }
 
                 $conn->close();
             }
