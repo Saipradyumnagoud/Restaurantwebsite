@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 .main-nav {
   display: flex;
   align-items: center;
@@ -117,19 +118,26 @@ form input,form textarea{
   color : white;
   border-color: wheat;
 }
-.menu{
+.menu {
   display: inline-block;
-  padding: 10px 20PX;
-  /* border: 2px solid red;  */
-  color: black;
+  padding: 20px; /* Adjust padding to make buttons square */
+  width: 130px; /* Adjust width to make buttons square */
+  height: 130px; /* Adjust height to make buttons square */
+  color: rgb(108, 153, 108);
   background-color: white;
   text-decoration: none;
-  border-radius: 30px;
-  transition: border-color 0.5s; 
-  transition: transform 0.3s ease
+  border-radius: 5px;
+  transition: border-color 0.5s;
+  transition: transform 0.3s ease;
+  text-align: center; /* Center text horizontally */
+  line-height: 1.5; /* Center text vertically */
 }
-.menu:hover{
-  
+
+.menu img {
+  display: block;
+  margin: 0 auto 10px; /* Center the image vertically */
+}
+.menu:hover {
   transform: scale(1.1);
 }
 /*
@@ -244,6 +252,49 @@ form input,form textarea{
  #booktable {
   background-image: url('contact.png'); /* Adjust the path to your background image */
   
+}
+.services__container{
+  row-gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.services__content{
+  text-align: center;
+}
+
+.services__img{
+  width: 64px;
+  height: 64px;
+  fill: var(--first-color);
+  margin-bottom: var(--mb-2);
+}
+
+.services__title{
+  font-size: var(--h3-font-size);
+  color: var(--title-color);
+  margin-bottom: var(--mb-1);
+}
+
+.services__description{
+  padding: 0 1.5rem;
+}
+.section{
+  padding: 4rem 0 2rem;
+}
+
+.section-title, .section-subtitle{
+  text-align: center;
+}
+
+.section-title{
+  
+}
+
+.section-subtitle{
+  display: block;
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1);
 }
 
  @media (max-width: 952px) {
