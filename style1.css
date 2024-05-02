@@ -301,10 +301,10 @@ form input,form textarea{
   #navbar ul {
     display: none;
     position: fixed;
-    top: 56px; /* Adjust as needed */
+    top: 56px; 
     left: 0;
     width: 100%;
-    background-color: pink; /* Adjust as needed */
+    background-color: pink; 
     padding: 0;
     margin: 0;
     text-align: center;
