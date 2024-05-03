@@ -97,6 +97,11 @@ form input,form textarea{
   color: black;
   font-size: 18px ;
   border-radius: 6px;
+  
+}
+.label
+{
+  color: white;
 }
 .sendbutton {
   display: inline-block;
