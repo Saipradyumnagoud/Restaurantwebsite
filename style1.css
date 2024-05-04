@@ -113,12 +113,7 @@ form input,form textarea{
   border-radius: 5px;
   transition: border-color 0.1s; 
 }
-/* .sendbutton:hover
-{
-  background-color: green;
-  color: black;
-} */
-.book:hover{
+:hover{
   background-color: #009087;
   color : white;
   border-color: wheat;
