@@ -401,7 +401,7 @@
       
       <input type="tel"  name="phone"  id="number"  pattern="[0-9]{10}" required /><br/><br/>
       <label class="label" >EMAIL : </label>
-      <input type="text" name="mail" id="mail" required /><br/><br/>
+      <input type="text" name="mail" id="mail" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required /><br/><br/>
       <button type="submit" class="sendbutton" onclick="book()">BOOK NOW</button>
     </form>
   </div>
