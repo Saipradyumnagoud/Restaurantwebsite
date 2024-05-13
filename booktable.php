@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Details</title>
-    <link   rel="icon" href="logo.png" >
+    <link rel="icon" href="logo.png">
     <style>
         body {
             background-size: cover;
@@ -14,7 +14,6 @@
             justify-content: center;
             align-items: center;
             background-image: url(home.png);
-            
         }
         .container {
             max-width: 600px;
@@ -48,15 +47,13 @@
         <h1>Booking Details</h1>
         <div class="booking-details">
             <?php
-            $hostname = "localhost"; 
-            $username = "root"; 
-            $password = ""; 
+            $hostname = "localhost";
+            $username = "root";
+            $password = "";
             $database = "bookings";
+            
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $conn = new mysqli($hostname,
-                $username,
-                $password,
-                $database);
+                $conn = new mysqli($hostname, $username, $password, $database);
 
                 if ($conn->connect_error) {
                     die("Connection failed: " . $conn->connect_error);
@@ -64,8 +61,7 @@
 
                 $name = $_POST['name'];
                 $phone = $_POST['phone'];
-                $email= $_POST['mail'];
-
+                $email = $_POST['mail'];
 
                 // Check if user can book a table
                 $sixHoursAgo = date('Y-m-d H:i:s', strtotime('-6 hours'));
@@ -82,14 +78,14 @@
                     $tableNumber = assignTableNumber();
 
                     // Insert booking into the database
-                    $sql = "INSERT INTO bookings (name, phone, table_number) VALUES (?, ?, ?)";
+                    $sql = "INSERT INTO bookings (name, phone, email, table_number) VALUES (?, ?, ?, ?)";
                     $stmt = $conn->prepare($sql);
-                    $stmt->bind_param("ssi", $name, $phone, $tableNumber);
+                    $stmt->bind_param("sssi", $name, $phone, $email, $tableNumber);
                     if ($stmt->execute()) {
                         echo "<p><strong>Name:</strong> $name</p>";
                         echo "<p><strong>Phone Number:</strong> $phone</p>";
+                        echo "<p><strong>Email:</strong> $email</p>";
                         echo "<p><strong>Table Number:</strong> $tableNumber</p>";
-                        
                     } else {
                         echo "Error: " . $sql . "<br>" . $conn->error;
                     }
