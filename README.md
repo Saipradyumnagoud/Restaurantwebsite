@@ -13,6 +13,10 @@ This repository contains the source code for a simple restaurant website.
 
 To use this website, simply clone the repository and open the `index.html` file in your web browser.
 
+## Prerequisites
+- XAMPP
+- MYSQL Connector
+
 ## To run this code
 
 - To use run this code install XAMPP in your pc.
